@@ -29,6 +29,13 @@ export default class State extends Component {
       count : this.state.count*2
     })
   }
+   //===========??//
+  
+   divSwitch = () => {
+    this.setState({
+      count : this.state.count/3
+    })
+  }
                   //==========??//
   
   render() {
@@ -36,10 +43,12 @@ export default class State extends Component {
     return (
       <div>
         <h1> serial No:  {count}</h1>
-        <button  onClick={this.handleSwitch}>+</button>
-
-        <button style= {{ margin: "10px"}} onClick={this.decSwitch}>-</button>
+        <button  onClick={this.handleSwitch} disabled ={count === 10 ? true: false}>+</button>
+        <button onClick={this.decSwitch} disabled ={count === 0 ? true: false}>- 
+        </button>
         <button style= {{ margin: "10px"}} onClick={this.intoSwitch}>*</button>
+        <button style= {{ margin: "10px"}} onClick={this.divSwitch}>/</button>
+
 
       </div>
     )
