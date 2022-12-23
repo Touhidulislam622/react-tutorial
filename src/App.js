@@ -1,11 +1,11 @@
 import './App.css';
-import State from './State';
+import ConditionalReandering from './ConditionalReandering/index'
 
 function App() {
 
   return (
     <div ClassName="body" >
-      <State />
+      <ConditionalReandering />
     </div>
   );
 }
