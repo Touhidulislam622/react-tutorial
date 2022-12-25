@@ -1,11 +1,10 @@
 import './App.css';
-import ConditionalReandering from './ConditionalReandering/index'
-
+import EventHandler from './EVENT_HANDLER/EventHandler'
 function App() {
 
   return (
-    <div ClassName="body" >
-      <ConditionalReandering />
+    <div ClassName ="body" >
+      <EventHandler/>
     </div>
   );
 }
