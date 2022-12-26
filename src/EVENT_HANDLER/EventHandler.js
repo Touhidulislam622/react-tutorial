@@ -10,19 +10,20 @@ class EventHandler extends Component {
       }
     }
 
-    handleOnChange = (e) => {
+    handleOnChange = (e) => {     //es6//
         this.setState({
             changeValue : e.target.value 
-        },  () => {                             // <== second perametar==//
+        },() => {                             // <== second perameter==//
             console.log(this.state.changeValue)
         })
     }
 
   render() {
+    const {changeValue} = this.state
     return (
       <div>
         <input type="text" onChange={this.handleOnChange} />
-        <p>{this.state.changeValue}</p>
+        <p>{changeValue}</p>
       </div>
     )
   }
