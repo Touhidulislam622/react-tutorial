@@ -1,13 +1,11 @@
 import './App.css';
-import EventHandler from './EVENT_HANDLER/EventHandler'
-import Clone from './EVENT_HANDLER/Clone';
+import Binding from './HANDLE_BINDING/Binding';
 
 function App() {
 
   return (
     <div ClassName ="body" >
-      <EventHandler/>
-      <Clone />
+      <Binding/>
     </div>
   );
 }
